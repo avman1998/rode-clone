@@ -34,6 +34,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              learnButton: "#ad986c",
             },
           },
         },
@@ -46,7 +47,7 @@
   </head>
   <body class="m-0 p-0">
     <section
-      class="container flex flex-row justify-between items-baseline border-[1px] border-gray-300 px-[50px] text-gray-500 py-[2px] max-w-screen-2xl w-full"
+      class="container flex flex-row justify-between items-center border-[1px] border-gray-300 lg:px-[50px] px-[20px] text-gray-500 py-[5px] max-w-screen-2xl w-full"
     >
       <div class="flex flex-row justify-between items-center gap-[2px]">
         <i class="fa-solid fa-bars"></i>
@@ -190,11 +191,8 @@
       </div>
     </section> -->
     <section
-      class="container bg-[url('https://edge.rode.com/images/page/1/modules/5813/rode-rodecaster-pro-II-home-page-1920x700-rgb.jpg')] bg-no-repeat bg-center h-[700px] lg:flex items-center justify-end px-[50px] max-w-screen-2xl w-full hidden"
+      class="container bg-[url('https://edge.rode.com/images/page/1/modules/5813/rode-rodecaster-pro-II-home-page-1920x700-rgb.jpg')] bg-no-repeat bg-center h-[700px] lg:flex items-center justify-end lg:px-[50px] px-[20px] max-w-screen-2xl w-full hidden"
     >
-      <div>
-        <img src="" alt="" />
-      </div>
       <div class="flex flex-col items-center justify-center gap-[20px] w-[45%]">
         <img
           src="https://edge.rode.com/images/page/1/modules/5813/RODECasterProII_PL_PI_01.svg"
@@ -209,9 +207,15 @@
           solution for streamers, podcasters, musicians, and creators. Take your
           content to the next level.
         </p>
-        <div class="flex items-center justify-center text-white">
-          <p>LEARN MORE ></p>
-          <button>BUY NOW</button>
+        <div class="flex items-center justify-between text-white gap-[10px]">
+          <p class="text-learnButton font-bold">
+            LEARN MORE <i class="fa-regular fa-greater-than"> </i>
+          </p>
+          <button
+            class="hover:bg-white bg-learnButton text-white hover:text-learnButton px-[20px] py-[10px] rounded-full font-bold"
+          >
+            BUY NOW
+          </button>
         </div>
       </div>
     </section>
@@ -224,7 +228,7 @@
           alt=""
         />
       </div>
-      <div class="flex flex-col items-center justify-center gap-[20px] w-[45%]">
+      <div class="flex flex-col items-center justify-center gap-[20px]">
         <img
           src="https://edge.rode.com/images/page/1/modules/5813/RODECasterProII_PL_PI_01.svg"
           alt=""
@@ -238,9 +242,15 @@
           solution for streamers, podcasters, musicians, and creators. Take your
           content to the next level.
         </p>
-        <div class="flex items-center justify-center text-white">
-          <p>LEARN MORE ></p>
-          <button>BUY NOW</button>
+        <div
+          class="flex flex-col items-center justify-center text-white gap-[10px]"
+        >
+          <p class="text-learnButton font-bold">LEARN MORE ></p>
+          <button
+            class="hover:bg-white bg-learnButton text-white hover:text-learnButton px-[20px] py-[10px] rounded-full font-bold"
+          >
+            BUY NOW
+          </button>
         </div>
       </div>
     </section>
